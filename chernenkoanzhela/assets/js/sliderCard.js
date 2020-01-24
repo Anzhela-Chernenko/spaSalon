@@ -1,0 +1,5 @@
+$(function() {
+
+    $( '#fs-slider' ).imgslider();
+
+});

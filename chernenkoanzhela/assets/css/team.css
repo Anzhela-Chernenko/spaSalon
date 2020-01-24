@@ -1,0 +1,121 @@
+.teamHeader{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    background: linear-gradient(45deg, rgba(66, 154, 134, 1), transparent), url(/assets/img/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.teamMain{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 1700px;
+    background-color: #eeeeee;
+}
+.teamMembers{
+    width: 80%;
+    height: calc(100% - 70px);
+    margin: 0 auto;
+    display: flex;
+}
+
+.teamMembers__containerLeft,.teamMembers__containerRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.teamMembers__containerRight{
+    align-items: center;
+    justify-content: center;
+}
+
+.teamList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.teamList__list{
+    width: 100%;
+    height: 330px;
+    align-items: center;
+    display: flex;
+}
+.teamList__list__image{
+    width: 270px;
+    height: 100%;
+z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.teamList__memberDiscription{
+    background-color: white;
+    width: 300px;
+    height: 240px;
+}
+.teamSocial{
+    color: #9c9c9c;
+}
+.teamList__memberDiscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3% 0 3%;
+}
+
+.teamList__subtitle,.teamList__title{
+    margin: 0;
+    padding-bottom: 4%;
+}
+
+.teamListRight{
+    justify-content: center;
+}
+.listReverse,.listReverse--right{
+    flex-direction: row-reverse;
+}
+
+.listReverse--right{
+    padding: 11% 0 11% 0;
+}
+
+.copyright__copyright{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 620px) {
+    .teamList__memberDiscription.wow.slideInRight {
+        margin: 3% 0 -7% 0;
+    }
+    .teamList.teamListRight {
+        width: 100%;
+    }
+    .teamMembers__containerRight {
+        width: 100%;
+    }
+    .teamMain {
+        height: 100%;
+    }
+    .teamList__memberDiscription.wow.slideInLeft {
+        margin: 3% 0 3% 0;
+    }
+    .teamMembers {
+        flex-direction: column;
+    }
+    .teamMembers__containerLeft {
+        width: 100%;
+        flex-direction: column;
+    }
+    .teamList__list {
+        flex-direction: column;
+    }
+    .teamList__list__image{
+        height: auto;
+    }
+}
